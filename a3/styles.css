@@ -1,0 +1,11 @@
+.rhombus-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%; /* Adjust width as needed */
+    margin: auto;
+}
+
+.rhombus-quadrant {
+    width: 50%;
+    text-align: center;
+}
