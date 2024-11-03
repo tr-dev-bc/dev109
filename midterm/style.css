@@ -120,21 +120,21 @@ border-top: 1px solid #1f1f1f;
 .clear { clear: both; }
 
 .artifact-image {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .module-image {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .creative-class .creative-image {
-    width: 60px;
-    height: 70px;
+    width: 200px;
+    height: 250px;
 }
 
 .image-size {
-    width: 70px;
-    height: 90px;
+    width: 150;
+    height: 200px;
 }
