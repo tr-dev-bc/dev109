@@ -25,9 +25,9 @@
 
     <label>Choose symbol for Rhombus</label>
     <select id="symbol">
-        <option value="#">*</option>
-        <option value="+">$</option>
-        <option value="+">@</option>
+        <option value="#">#</option>
+        <option value="+">+</option>
+        <option value="=">=</option>
     </select><br>
     
     <button onclick="createRhombus(
@@ -39,10 +39,7 @@
     
     <p>Your Rhombus:</p>
     <div class="rhombus-container">
-        <div id="upLeft" class="rhombus-quadrant"></div>
-        <div id="upRight" class="rhombus-quadrant"></div>
-        <div id="downLeft" class="rhombus-quadrant"></div>
-        <div id="downRight" class="rhombus-quadrant"></div>
+        <div id="rhombus" class="rhombus"></div>
     </div>
 
     <!-- CALL YOUR JAVASCRIPT FILE IF YOU ARE USING A HOSTING ENVIRONMENT -->
