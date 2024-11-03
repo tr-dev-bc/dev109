@@ -5,10 +5,5 @@ body {
 }
 
 .rhombus {
-    text-align: center;
-    white-space: pre;
-}
-
-.rhombus-container {
-    margin-top: 20px;
+    text-align: center; /* Center text inside the rhombus */
 }

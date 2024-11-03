@@ -1,25 +1,27 @@
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
-    let rLine = ""; // initialize string to concatenate rhombus symbols for each line
+    let rLine = ""; // intiialize output
 
-    // top half of rhombus
+    // Top Half of Rhombus
     for (let i = 0; i < pHeight; i++) {
-        rLine += " ".repeat(pHeight - i - 1); //leading spaces
+        // Add leading spaces
+        rLine += "&nbsp;".repeat(pHeight - i - 1); 
         for (let j = 0; j <= i; j++) {
             rLine += (j % 2 ? `<span style='color:${pColorEven};'>${pSymbol}</span>` : `<span style='color:${pColorOdd};'>${pSymbol}</span>`);
-            if (j < i) rLine += " "; // space between symbols
+            if (j < i) rLine += "&nbsp;"; // Add space between symbols using whitespace
         }
-        rLine += "\n"; // end line and go to next
+        rLine += "<br>"; // New line after each row
     }
 
-    // bottom Half of Rhombus
+    // Bottom Half of Rhombus
     for (let i = pHeight; i > 0; i--) {
-        rLine += " ".repeat(pHeight - i); //leading spaces
+        // Add leading spaces
+        rLine += "&nbsp;".repeat(pHeight - i); 
         for (let j = 0; j < i; j++) {
             rLine += (j % 2 ? `<span style='color:${pColorEven};'>${pSymbol}</span>` : `<span style='color:${pColorOdd};'>${pSymbol}</span>`);
-            if (j < i - 1) rLine += " "; // space b/w symbols
+            if (j < i - 1) rLine += "&nbsp;"; // Add space
         }
-        rLine += "\n"; //end line and go to next
+        rLine += "<br>"; // New line after each row
     }
 
-    document.getElementById("rhombus").innerHTML = rLine; // insert into rhombus div
+    document.getElementById("rhombus").innerHTML = rLine;
 }
